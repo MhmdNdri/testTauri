@@ -2,6 +2,16 @@
 
 A comprehensive testing application designed to validate Tauri desktop applications across different Windows versions, with special focus on Windows 7 compatibility and WebView2 runtime requirements.
 
+## Windows 7 Testing (TL;DR)
+
+1. Build MSI: In GitHub → Actions → run “Build installers” → download the “windows-installers” artifact (MSI).
+
+2. Prepare Win7 machine: Windows 7 SP1 + KB4474419 (SHA‑2) + KB4490628 (servicing stack). Optional: .NET 4.8, VC++ 2015–2022.
+
+3. Install: Copy the MSI to the machine and run it (the MSI embeds the WebView2 bootstrapper; needs internet).
+
+4. Run tests: Open the app → “Run Compatibility Tests” → “Generate Report” (JSON saved to Desktop).
+
 ## 🎯 Purpose
 
 This project addresses critical concerns for desktop application deployment:
