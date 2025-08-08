@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "identifier": "com.tauri-compatibility-test.app",
   "build": {
-    "frontendDist": "../src"
+    "beforeDevCommand": "npm run web:dev",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist-web"
   },
   "app": {
     "withGlobalTauri": true,

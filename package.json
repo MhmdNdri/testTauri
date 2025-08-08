@@ -5,10 +5,19 @@
   "type": "module",
   "scripts": {
     "tauri": "tauri",
+    "web:dev": "vite",
+    "web:build": "vite build",
     "dev": "tauri dev",
     "build": "tauri build"
   },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@tauri-apps/api": "^2"
+  },
   "devDependencies": {
-    "@tauri-apps/cli": "^2"
+    "@tauri-apps/cli": "^2",
+    "vite": "^5.4.8",
+    "@vitejs/plugin-react": "^4.3.1"
   }
 }
